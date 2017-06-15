@@ -5,6 +5,7 @@
 ### Requirements
 * Python 2.7
 * Ansible 2.3
+* Watchdog
 * A Private Key PEM file with access to an S3 bucket
 * AWS Access Key ID
 * AWS Secret Access Key
