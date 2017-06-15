@@ -1,0 +1,9 @@
+---
+- name: Sync files to S3
+  s3_sync:
+    bucket: "grindaga"
+    file_root: "../"
+    file_change_strategy: "checksum"
+    permission: "bucket-owner-full-control"
+    include: "*"
+    exclude: ".ansible/*,ansible/*"
