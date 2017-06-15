@@ -3,7 +3,7 @@
   s3_sync:
     bucket: "grindaga"
     file_root: "../"
-    file_change_strategy: "checksum"
+    file_change_strategy: "date_size"
     permission: "bucket-owner-full-control"
     include: "*"
-    exclude: ".ansible/*,ansible/*"
+    exclude: ".*,ansible/*"
